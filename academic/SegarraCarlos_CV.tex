@@ -5,6 +5,7 @@
 \usepackage{url,parskip} % Formatting packages
 \usepackage{graphicx}
 \usepackage{adjustbox}
+\usepackage{multirow, makecell}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
@@ -24,8 +25,8 @@
 %}}}
 
 % Variable Definition
-\newcommand\rightColumnWidth{13.55cm}
-\newcommand\leftColumnWidth{1.75cm}
+\newcommand\rightColumnWidth{13.4cm}
+\newcommand\leftColumnWidth{2cm}
 \newcommand\pageWidth{16cm}
 
 \begin{document}
@@ -46,23 +47,26 @@
 
 \section{Short Bio}
 \begin{tabular}{p{\pageWidth}}
-    I am a fourth year PhD student at the Large-Scale Data and Systems Group (LSDS) of the Imperial College London, under the supervision of Prof. Peter Pietzuch.
+    I am a final year PhD student at the Large-Scale Data and Systems Group (LSDS) of the Imperial College London, under the supervision of Prof. Peter Pietzuch.
     My research addresses the design and implementation of secure, high-performance, runtime systems for the cloud.
     I have a special interest in privacy-preserving systems and confidential computing.
     As part of my PhD, I have interned with Intel Labs in the datacenter security team and with IBM Research in the hybrid cloud infrastructure team.
     Before joining Imperial, I received an MSc in advanced mathematics, a BSc in mathematics, and a BSc in electrical engineering from the Technical University of Catalonia (UPC).
-    In the past, I have worked as a researcher for the Barcelona Supercomputing Center (BSC), Nokia Bell Labs, the Swiss Center for Electronics and Microtechnology (CSEM), the University of Neuchatel and the UPC.
+    I have worked as a researcher for the Barcelona Supercomputing Center (BSC), Nokia Bell Labs, the Swiss Center for Electronics and Microtechnology (CSEM), the University of Neuchatel and the UPC.
 \end{tabular}
 
 \section{Publications}
 \begin{tabular}{R{\leftColumnWidth}p{\rightColumnWidth}}
-    \textit{Submitted}   & TLess: A Confidential Serverless Runtime with Attestation and Authorisation \\
+    \textit{Submitted}   & TLess: Anonymous and Composable Attestation for Confidential Serverless Workflows \\
                             & \textbf{C. Segarra}, S. Shillaker, D. Goltzsche, A. Vahldiek-Oberwagner, M. Steiner, M. Vij, L. Vilanova, R. Kapitza, and P. Pietzuch \\[3pt]
-    \textit{Submitted}   & Granny: Fine-Grained Distribution of Scientific Workloads in the Cloud \\
-                            & S. Shillaker, \textbf{C. Segarra}, M. Mathys, M. Fournial, and P. Pietzuch \\[3pt]
+    \textit{Submitted}   & Granny: Granular Management of Compute-Intensive Applications in the Cloud \\
+                            & \textbf{C. Segarra}, S. Shillaker, R. Bruno, E. Mappoura,  L. Vilanova, and P. Pietzuch \\[3pt]
+    SoCC'24 & Is It Time To Put Cold Starts In The Deep Freeze? \\
+            & \textbf{C. Segarra}, I. Durev, and P. Pietzuch \\[3pt]
+    \multirowcell{2}{SESAME'24 \\ @ EuroSys} & Serverless Confidential Containers: Challenges and Opportunities \\
+            & \textbf{C. Segarra}, T. Feldman-Fitzhum, D. Buono, P. Pietzuch \\[3pt]
     Bitcoin'21  & A Novel Framework for the Analysis of Unknown Transactions in Bitcoin: Theory, Model, and Experimental Results \\
-                & M. Caprolu, M. Pontecorvi, M. Signorini,
-                \textbf{C. Segarra}, and R. Di Pietro \\[3pt]
+            & M. Caprolu, M. Pontecorvi, M. Signorini, \textbf{C. Segarra}, and R. Di Pietro \\[3pt]
     EuroSys'20  & KOLLAPS: Decentralized and Dynamic Topology Emulator \\
             & P. Gouveia, J. Neves, \textbf{C. Segarra}, L. Liechti, S. Issa, V. Schiavoni, and M. Matos \\[3pt]
     SRDS'20 & Hardening IoT Brokers Using ARM TrustZone for Secure Pub/Sub Middleware \\
