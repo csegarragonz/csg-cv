@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{multirow, makecell}
+\usepackage{longtable}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
@@ -46,65 +47,26 @@
 \end{table}
 
 \section{Short Bio}
-\begin{tabular}{p{\pageWidth}}
-    I am a fifth-year PhD student at the Large-Scale Data and Systems Group (LSDS) of the Imperial College London, under the supervision of Prof. Peter Pietzuch.
-    My research addresses the design and implementation of secure, high-performance, runtime systems for the cloud.
-    I have a special interest in serverless and confidential computing.
-    As part of my PhD, I have interned with Intel Labs, IBM Research, and Microsoft Research.
-    Before joining Imperial, I received an MSc in advanced mathematics, a BSc in mathematics, and a BSc in electrical engineering from the Technical University of Catalonia (UPC).
-    I have worked as a researcher for the Barcelona Supercomputing Center (BSC), Nokia Bell Labs, the Swiss Center for Electronics and Microtechnology (CSEM), the University of Neuchatel and the UPC.
-\end{tabular}
+\begin{longtable}{p{\pageWidth}}
+    I am a final-year PhD student at the Large-Scale Data and Systems Group (LSDS) of the Imperial College London, under the supervision of Prof. Peter Pietzuch.
+    I am interested in distributed systems and their security, including lightweight virtualisation and confidential computing. % I have designed, and contributed to, runtime systems with a variety of isolation guarantees and with varying
+    % My research addresses the design and implementation of secure, high-performance, runtime systems for the cloud. I have a special interest in serverless and confidential computing.
+    As part of my PhD, I have interned with Intel Labs, IBM Research, and Microsoft Research. \\[3pt]
 
-\section{Publications}
-\begin{tabular}{R{\leftColumnWidth}p{\rightColumnWidth}}
-    \textit{Submitted}   & TLess: Anonymous and Composable Attestation for Confidential Serverless Workflows \\
-                            & \textbf{C. Segarra}, S. Shillaker, D. Goltzsche, A. Vahldiek-Oberwagner, M. Steiner, M. Vij, L. Vilanova, R. Kapitza, and P. Pietzuch \\[3pt]
-    NSDI'25     & Granny: Granular Management of Compute-Intensive Applications in the Cloud \\
-                & \textbf{C. Segarra}, S. Shillaker, G. Li, E. Mappoura, R.Bruno, L. Vilanova, and P. Pietzuch \\[3pt]
-    \multirowcell{2}{SESAME'25 \\ @ EuroSys} & Mosaic: Optimizing Cloud Resource Efficiency with Lazy Application Modules \\
-            & S. Ivanenko, \textbf{C. Segarra}, R. Bruno \\[3pt]
-    SoCC'24     & Is It Time To Put Cold Starts In The Deep Freeze? \\
-                & \textbf{C. Segarra}, I. Durev, and P. Pietzuch \\[3pt]
-    \multirowcell{2}{SESAME'24 \\ @ EuroSys} & Serverless Confidential Containers: Challenges and Opportunities \\
-            & \textbf{C. Segarra}, T. Feldman-Fitzhum, D. Buono, P. Pietzuch \\[3pt]
-    Bitcoin'21  & A Novel Framework for the Analysis of Unknown Transactions in Bitcoin: Theory, Model, and Experimental Results \\
-            & M. Caprolu, M. Pontecorvi, M. Signorini, \textbf{C. Segarra}, and R. Di Pietro \\[3pt]
-    EuroSys'20  & KOLLAPS: Decentralized and Dynamic Topology Emulator \\
-            & P. Gouveia, J. Neves, \textbf{C. Segarra}, L. Liechti, S. Issa, V. Schiavoni, and M. Matos \\[3pt]
-    SRDS'20 & Hardening IoT Brokers Using ARM TrustZone for Secure Pub/Sub Middleware \\
-            & \textbf{C. Segarra}, and R. Delgado-Gonzalo, and V. Schiavoni \\[3pt]
-    MIE'20  & MQT-TZ: Secure MQTT Broker for Biomedical Signal Processing on the Edge \\
-            & \textbf{C. Segarra}, and R. Delgado-Gonzalo, and V. Schiavoni \\[3pt]
-    DAIS'19 & Using Trusted Execution Environments for Secure Stream Processing of Medical Data \\
-            & \textbf{C. Segarra}, M. Lemay, R. Delgado-Gonzalo, and V. Schiavoni, \\[3pt]
-    EMBC'19 & Secure Stream Processing for Medical Data \\
-            & \textbf{C. Segarra}, E. Muntan\'e, M. Lemay, V. Schiavoni, and  R. Delgado-Gonzalo \\[3pt]
-\end{tabular}
+    Before joining Imperial, I received an MSc in advanced mathematics, a BSc in mathematics, and a BSc in electrical engineering from the Technical University of Catalonia (UPC). I have worked as a researcher for the Barcelona Supercomputing Center (BSC), Nokia Bell Labs, the Swiss Center for Electronics and Microtechnology (CSEM), the University of Neuchatel and the UPC. All my work is open-source and available on Github at: \href{https://github.com/csegarragonz}{https://github.com/csegarragonz}.
+\end{longtable}
 
-\section{Education}
-
-\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
-    \emph{Current} & PhD in Computing (Exp. Graduation: 12/2025) \\
-    \textsc{10/2020} & Imperial College London - Sup. Professor Peter Pietzuch \\
-\end{tabular}
-
-\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
-    \textsc{07/2020} & Master in \textbf{\textsc{Advanced Mathematics and Mathematical Engineering}} \\
-    \textsc{09/2019} & \small{\emph{Technical University of Catalonia}, UPC}\\
-     % & \footnotesize{MSc in Advanced Mathematics with a focus in Discrete Mathematics and Algorithms. Enrolled to courses from the Master in Research in Informatics (MIRI-UPC). Relevant courses cover: Graph Theory, Codes and Cryptography, and Concurrence, Parallelism, and Distributed Systems.}
-\end{tabular}
-
-\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
-    \textsc{05/2019} & Bachelor's degree in \textbf{\textsc{Mathematics}} \\
-    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC}\\
-     % & \footnotesize{BSc in Mathematics within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers real and complex analysis, statistics, probability and graph theory, combinatorics and algorithms.}
-\end{tabular}
-
-\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
-    \textsc{05/2019} &  Bachelor`s degree in \textbf{\textsc{Telecommunications Science and Technology}}\\
-    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC} \\
-     % & \footnotesize{BSc in Telecommunications Engineering within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers networking and concurrency, digital and analogical communications and real time digital signal processing.}
-\end{tabular}
+\section{Relevant Projects}
+\begin{longtable}{R{\leftColumnWidth}p{\rightColumnWidth}}
+    \href{https://github.com/faasm/faasm}{Faasm} & Faasm is a distributed serverless runtime written in C++ that isolates serverless functions using WebAssembly. I implemented an LLVM-based cross-compilation toolchain and runtime libraries to execute OpenMP and MPI applications in Faasm.  I also extended the runtime to support executing WebAssembly modules inside resource-constrained Intel SGX enclaves. \\
+            & \textit{Technologies:} C, C++, WebAssembly, Docker \\[3pt]
+    \href{https://github.com/sc2-sys}{SC2} &  SC2 is a project to optimize the deployment of container images inside confidential VMs. I reduced start-up latency by an order of magnitude by patching containerd, Kata Containers, OVMF, and the guest runtime. Some of my patches have been upstreamed to Kata Containers, or are being discussed in projects like containerd's nydus snapshotter. \\
+    % I profiled the entire stack from Kubernetes, to containerd, through the VMM, guest virtual firmware, guest kernel, and guest userspace. Using my findings, I developed patches in several components in the stack drastically reducing start-up latency. \\
+            &  \textit{Technologies:} Go, Rust, Kubernetes, Containerd, OVMF \\[3pt]
+    \href{https://github.com/nanvix/nanvix}{Nanvix} & Nanvix is a microkernel OS written in Rust developed at Microsoft research. I helped develop a credit-based system to reduce the number of VM exits from application code when blocked waiting for IO. I also designed and profiled part of the IPC system and IO stack, achieving latencies comparable to monolithic kernels with a disaggregated microkernel design. \\
+    % Nanvix executes applications in minimal KVM-backed user VMs running the Nanvix kernel. All IO-related system calls are forwarded to a fully-fledged system VM. My contributions include the development of the system VM, parts of the VMM, and the control-plane. \\
+            & \textit{Technologies:} Rust, Tokio, Cloud-Hypervisor \\[3pt]
+\end{longtable}
 
 \section{Work Experience}
 \begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
@@ -154,5 +116,56 @@
     \textsc{04/2017} & \small{\emph{Workflows and Distributed Computing Group} - Sup. Rosa M. Badia, PhD} \\
     % & \footnotesize{Research student at the Workflows and Distributed Computing Group at the BSC in Barcelona, Spain. I developed, deployed and benchmarked a distributed implementation of the DBSCAN clustering algorithm using COMP Superscalar, a programming model for distributed computing. Evaluation was done in the \textit{Mare Nostrum} supercomputer.}
 \end{tabular}
+
+\section{Education}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \emph{Current} & PhD in Computing (Exp. Graduation: 04/2026) \\
+    \textsc{10/2020} & Imperial College London - Sup. Professor Peter Pietzuch \\
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{07/2020} & Master in \textbf{\textsc{Advanced Mathematics and Mathematical Engineering}} \\
+    \textsc{09/2019} & \small{\emph{Technical University of Catalonia}, UPC}\\
+     % & \footnotesize{MSc in Advanced Mathematics with a focus in Discrete Mathematics and Algorithms. Enrolled to courses from the Master in Research in Informatics (MIRI-UPC). Relevant courses cover: Graph Theory, Codes and Cryptography, and Concurrence, Parallelism, and Distributed Systems.}
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{05/2019} & Bachelor's degree in \textbf{\textsc{Mathematics}} \\
+    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC}\\
+     % & \footnotesize{BSc in Mathematics within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers real and complex analysis, statistics, probability and graph theory, combinatorics and algorithms.}
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{05/2019} &  Bachelor`s degree in \textbf{\textsc{Telecommunications Science and Technology}}\\
+    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC} \\
+     % & \footnotesize{BSc in Telecommunications Engineering within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers networking and concurrency, digital and analogical communications and real time digital signal processing.}
+\end{tabular}
+
+\section{Publications}
+\begin{longtable}{R{\leftColumnWidth}p{\rightColumnWidth}}
+    \textit{Submitted}   & Accless: Serverless Access Control for Confidential Serverless \\
+                            & \textbf{C. Segarra}, M. Venema, S. Shillaker, A. Vahldiek-Oberwagner, M. Steiner, M. Vij, L. Vilanova, R. Kapitza, and P. Pietzuch \\[3pt]
+    NSDI'25     & Granny: Granular Management of Compute-Intensive Applications in the Cloud \\
+                & \textbf{C. Segarra}, S. Shillaker, G. Li, E. Mappoura, R. Bruno, L. Vilanova, and P. Pietzuch \\[3pt]
+    \multirowcell{2}{SESAME'25 \\ @ EuroSys} & Mosaic: Optimizing Cloud Resource Efficiency with Lazy Application Modules \\
+            & S. Ivanenko, \textbf{C. Segarra}, R. Bruno \\[3pt]
+    SoCC'24     & Is It Time To Put Cold Starts In The Deep Freeze? \\
+                & \textbf{C. Segarra}, I. Durev, and P. Pietzuch \\[3pt]
+    \multirowcell{2}{SESAME'24 \\ @ EuroSys} & Serverless Confidential Containers: Challenges and Opportunities \\
+            & \textbf{C. Segarra}, T. Feldman-Fitzhum, D. Buono, P. Pietzuch \\[3pt]
+    Bitcoin'21  & A Novel Framework for the Analysis of Unknown Transactions in Bitcoin: Theory, Model, and Experimental Results \\
+            & M. Caprolu, M. Pontecorvi, M. Signorini, \textbf{C. Segarra}, and R. Di Pietro \\[3pt]
+    EuroSys'20  & KOLLAPS: Decentralized and Dynamic Topology Emulator \\
+            & P. Gouveia, J. Neves, \textbf{C. Segarra}, L. Liechti, S. Issa, V. Schiavoni, and M. Matos \\[3pt]
+    SRDS'20 & Hardening IoT Brokers Using ARM TrustZone for Secure Pub/Sub Middleware \\
+            & \textbf{C. Segarra}, and R. Delgado-Gonzalo, and V. Schiavoni \\[3pt]
+    MIE'20  & MQT-TZ: Secure MQTT Broker for Biomedical Signal Processing on the Edge \\
+            & \textbf{C. Segarra}, and R. Delgado-Gonzalo, and V. Schiavoni \\[3pt]
+    DAIS'19 & Using Trusted Execution Environments for Secure Stream Processing of Medical Data \\
+            & \textbf{C. Segarra}, M. Lemay, R. Delgado-Gonzalo, and V. Schiavoni, \\[3pt]
+    EMBC'19 & Secure Stream Processing for Medical Data \\
+            & \textbf{C. Segarra}, E. Muntan\'e, M. Lemay, V. Schiavoni, and  R. Delgado-Gonzalo \\[3pt]
+\end{longtable}
 
 \end{document}
