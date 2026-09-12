@@ -1,15 +1,18 @@
+ROOT_DIR	= $(CURDIR)
+CONFIG_DIR	= $(ROOT_DIR)/config
+MAIN_FILE	= $(ROOT_DIR)/SegarraCarlos_CV.tex
+
+.PHONY: all clean main.pdf
+
 all: main.pdf
 
 main.pdf:
-	docker run --rm \
-	  -v $(shell pwd):/workdir \
-	  -u $(shell id -u):$(shell id -g) \
-	  csegarragonz/latex-docker:texlive_2023 SegarraCarlos_CV.tex
-
-.PHONY: main.pdf
+	@latexmk \
+		-r $(CONFIG_DIR)/latexmkrc \
+		-pdf \
+		-interaction=nonstopmode \
+		-quiet \
+		$(MAIN_FILE)
 
 clean:
-	docker run --rm \
-	  -v $(shell pwd):/workdir \
-	  -u $(shell id -u):$(shell id -g) \
-	  csegarragonz/latex-docker:texlive_2023 clean
+	@latexmk -r $(CONFIG_DIR)/latexmkrc -C

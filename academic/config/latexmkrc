@@ -1,0 +1,6 @@
+# Put all aux files here; leave final outputs in CWD
+$aux_dir = 'build';
+$emulate_aux_dir = 1;
+
+# (optional) clean extras
+$clean_ext .= ' glo gls glg acn acr alg ist xdy glo-abr gls-abr glg-abr acn-abr acr-abr alg-abr';

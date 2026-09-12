@@ -58,11 +58,11 @@
 
 \section{Relevant Projects}
 \begin{longtable}{R{\leftColumnWidth}p{\rightColumnWidth}}
-    \href{https://github.com/faasm/faasm}{Faasm} & Faasm is a distributed serverless runtime written in C++ that isolates serverless functions using WebAssembly. I implemented an LLVM-based cross-compilation toolchain and runtime libraries to execute OpenMP and MPI applications in Faasm.  I also extended the runtime to support executing WebAssembly modules inside resource-constrained Intel SGX enclaves. \\
+    \href{https://github.com/faasm/faasm}{Faasm} & Faasm is a distributed serverless runtime written in C++ that isolates serverless functions using WebAssembly. I implemented an LLVM-based cross-compilation toolchain and runtime libraries to execute HPC applications written with OpenMP and MPI on Faasm.  I also extended the runtime to support executing WebAssembly modules inside resource-constrained Intel SGX enclaves. \\
             & \textit{Technologies:} C, C++, WebAssembly, Docker \\[3pt]
     \href{https://github.com/sc2-sys}{SC2} &  SC2 is a project to optimize the deployment of container images inside confidential VMs. I reduced start-up latency by an order of magnitude by patching containerd, Kata Containers, OVMF, and the guest runtime. Some of my patches have been upstreamed to Kata Containers, or are being discussed in projects like containerd's nydus snapshotter. \\
     % I profiled the entire stack from Kubernetes, to containerd, through the VMM, guest virtual firmware, guest kernel, and guest userspace. Using my findings, I developed patches in several components in the stack drastically reducing start-up latency. \\
-            &  \textit{Technologies:} Go, Rust, Kubernetes, Containerd, OVMF \\[3pt]
+            &  \textit{Technologies:} Go, Rust, Kubernetes, Containerd, Python \\[3pt]
     \href{https://github.com/nanvix/nanvix}{Nanvix} & Nanvix is a microkernel OS written in Rust developed at Microsoft research. I helped develop a credit-based system to reduce the number of VM exits from application code when blocked waiting for IO. I also designed and profiled part of the IPC system and IO stack, achieving latencies comparable to monolithic kernels with a disaggregated microkernel design. \\
     % Nanvix executes applications in minimal KVM-backed user VMs running the Nanvix kernel. All IO-related system calls are forwarded to a fully-fledged system VM. My contributions include the development of the system VM, parts of the VMM, and the control-plane. \\
             & \textit{Technologies:} Rust, Tokio, Cloud-Hypervisor \\[3pt]
